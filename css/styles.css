@@ -87,7 +87,7 @@ header .intro { flex: 1 1 auto; }
 header .intro h1 { margin-bottom: .15rem; }
 header .intro h2 { margin-bottom: .5rem; }
 
-/* Tighten header spacing: remove margins on header h1/h2 */
+/* remove margins on header h1/h2 */
 header h1, header h2 { margin: 0; }
 
 footer {
