@@ -6,8 +6,11 @@
 */
 
 /* Box model fix */
-*, *::before, *::after {
+html {
     box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 /* Global styles 
@@ -21,12 +24,11 @@ body {
     font-family: 'Inter', Arial, sans-serif;
     background: #d4f1ee;
     color: #0F1724;
-    width: 92%;
-    max-width: 960px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
-    padding: 1rem 1rem 3rem 1rem;
+    /* padding: 1rem 1rem 3rem 1rem; */
 }
 
 /* Headings */
@@ -72,12 +74,12 @@ header, main, footer { display: block; }
 header {
     background: #F8FAFC; /* very light grey */
     padding: 1rem;
-    margin-top: 1rem;
-    box-shadow: 0 2px 6px rgba(15,23,36,0.06);
+    /* margin-top: 1rem; */
+    /* box-shadow: 0 2px 6px rgba(15,23,36,0.06); */
     display: flex;
     gap: 1rem;
     align-items: center;
-    border-radius: 6px;
+    /* border-radius: 6px; */
 }
 
 
@@ -91,12 +93,12 @@ header .intro h2 { margin-bottom: .5rem; }
 header h1, header h2 { margin: 0; }
 
 footer {
-    margin-top: 1.25rem;
+    /* margin-top: 1.25rem; */
     background: #162338;
     color: #FFFFFF;
     padding: 1rem;
     text-align: center;
-    border-radius: 6px;
+    /* border-radius: 6px; */
 }
 
 .contact-info a { color: #FFFFFF; margin: 0 .5rem; text-decoration: none; padding: 10px; display: inline-block; }
@@ -136,9 +138,9 @@ footer {
 main section {
     background: #F1F5F9; /* subtle light grey-blue so sections contrast with page white */
     padding: 1rem;
-    margin-top: 1rem;
-    box-shadow: 0 1px 4px rgba(15,23,36,0.03);
-    border-radius: 6px;
+    /* margin-top: 1rem; */
+    /* box-shadow: 0 1px 4px rgba(15,23,36,0.03); */
+    /* border-radius: 6px; */
 }
 
 
